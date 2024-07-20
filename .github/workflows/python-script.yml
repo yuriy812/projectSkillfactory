@@ -4,7 +4,6 @@
 name: script-test
 
 on:
-
 permissions:
   contents: read
 
