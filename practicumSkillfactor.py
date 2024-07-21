@@ -4,5 +4,3 @@ for i in range(1, 10):
         continue
     multipl *= i
 print(multipl)
-
-print('Hello World')
