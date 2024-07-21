@@ -5,3 +5,4 @@ for i in range(1, 10):
     multipl *= i
 print(multipl)
 
+print('Hello World')
