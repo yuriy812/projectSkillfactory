@@ -22,8 +22,8 @@ A training project for checking course assignments.
 В цикле добавьте проверку условий: если число четное — пропускайте итерацию, если нечетное — добавляйте в итоговое произведение.
 После работы цикла выведите полученное произведение
   ```py multipl = 1
-for i in range(1, 10):
-    if i % 2 == 0:
-        continue
-    multipl *= i
-print(multipl)
+  for i in range(1, 10):
+      if i % 2 == 0:
+      continue
+        multipl *= i
+  print(multipl)
