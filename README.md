@@ -3,7 +3,7 @@
 A training project for checking course assignments.
 
 ---
-- [x] _Задание 17.5.3 (HW-04)_
+- [x]  _Задание 17.5.3 (HW-04)_
 
     - * Инструкция к выполнению задания :
 
@@ -15,13 +15,13 @@ A training project for checking course assignments.
   Добавьте вывод пустой строки после каждого нового множителя для удобства чтения результата.
   Критерии оценки: Программа выводит таблицу умножения от 1 до 10 для каждого числа.
   ```py 
-  for i in range(1, 11):
-  for j in range(1, 11):
-      print(f'{i} * {j} = {i * j}')
-  print() 
+    for i in range(1, 11):
+    for j in range(1, 11):
+        print(f'{i} * {j} = {i * j}')
+    print() 
   ```
 ---
-- [x]  _Задание 17.7.1 (HW-04)_
+- [x]   _Задание 17.7.1 (HW-04)_
 
     - * Инструкция к выполнению задания:
 
@@ -30,11 +30,11 @@ A training project for checking course assignments.
   В цикле добавьте проверку условий: если число четное — пропускайте итерацию, если нечетное — добавляйте в итоговое произведение.
   После работы цикла выведите полученное произведение
 ``` py 
-multipl = 1
-for i in range(1, 10):
+  multipl = 1
+  for i in range(1, 10):
     if i % 2 == 0:
         continue
     multipl *= i
-print(multipl)
+  print(multipl)
 ```
 ---
