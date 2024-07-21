@@ -1,4 +1,3 @@
-
 def calc_cube_perimeter(side):
     return side * 12
 one_cube_perimeter = calc_cube_perimeter(3)
