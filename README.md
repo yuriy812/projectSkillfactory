@@ -29,12 +29,12 @@ A training project for checking course assignments.
   Составьте цикл с перебором чисел от 1 до 10. Цикл может быть for или while.
   В цикле добавьте проверку условий: если число четное — пропускайте итерацию, если нечетное — добавляйте в итоговое произведение.
   После работы цикла выведите полученное произведение
-```py 
-  multipl = 1
-  for i in range(1, 10):
-    if i % 2 == 0:
-        continue
-    multipl *= i
-  print(multipl)
-```
+  ```py 
+     multipl = 1
+      for i in range(1, 10):
+        if i % 2 == 0:
+            continue
+        multipl *= i
+      print(multipl)
+  ```
 ---
