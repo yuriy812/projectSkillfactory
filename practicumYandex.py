@@ -1,5 +1,12 @@
-def calc_cube_perimeter(side):
-    return side * 12
-one_cube_perimeter = calc_cube_perimeter(3)
-full_length = one_cube_perimeter * 8
-print('Необходимый метраж палок для 8 кубов:', full_length)
+friends_names = ['Аня', 'Коля', 'Лёша', 'Лена', 'Миша']
+friends_cities = ['Владивосток', 'Красноярск', 'Москва', 'Обнинск', 'Чебоксары']
+
+# Объявлен пустой словарь
+friends = {}
+
+# Заполнение словаря именами и городами
+for i in range(len(friends_names)):
+    friends[friends_names[i]] = friends_cities[i]
+
+# Теперь можно получить информацию о городе Лены
+print('Лена живёт в городе ' + friends['Лена'])
