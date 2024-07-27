@@ -110,6 +110,33 @@ while True:
                 print(f'{class_} - {marks_sum / marks_count:.2f}')
         else:
             print('ОШИБКА: Вероятно, такого ученика не существует.')
+    elif command == 7:
+    # Выводим существующие предметы
+        print('Предметы, которые уже существуют:')
+        for i in classes:
+            print(f'-- {i}')
+    # Запрашиваем у пользователя ввод нового предмета
+        new_class = input('Введите название нового предмета: ')
+    # Проверяем, существует ли уже этот предмет
+        if new_class in classes:
+            print(f'ОШИБКА: Предмет "{new_class}" уже существует.')
+        else:
+    # Добавляем предмет в список классов
+            classes.append(new_class)
+
+    # Обновляем оценочные записи для каждого ученика, добавляя пустой список оценок для нового предмета
+            for student in students_marks:
+                students_marks[student][new_class] = []  # Инициализируем пустой список оценок для нового предмета
+
+                print(f'Предмет "{new_class}" успешно добавлен.')
+
+    # Вывод обновленного списка предметов для всех учеников
+                print('Обновленный список оценок для всех учеников:')
+            for student in students_marks:
+                print(f'{student}: {students_marks[student]}')
+
+
+
 
     elif command == 11:
         print('11. Выход из программы')
