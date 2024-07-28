@@ -127,16 +127,26 @@ while True:
     # Обновляем оценочные записи для каждого ученика, добавляя пустой список оценок для нового предмета
             for student in students_marks:
                 students_marks[student][new_class] = []  # Инициализируем пустой список оценок для нового предмета
-
                 print(f'Предмет "{new_class}" успешно добавлен.')
 
     # Вывод обновленного списка предметов для всех учеников
                 print('Обновленный список оценок для всех учеников:')
             for student in students_marks:
                 print(f'{student}: {students_marks[student]}')
-
-
-
+    elif command == 8:
+        print("Удаление предмета")
+        for i in classes:
+            print(f'-- {i}')
+    # Запрашиваем у пользователя ввод удаления предмета
+        removal_class = input('Введите название удаляемого предмета: ')
+        if removal_class not in classes:
+            print(f'ОШИБКА: Предмет "{removal_class}" не найден в списке.')
+        else:
+            classes.remove(removal_class)
+            print(f'Предмет "{removal_class}" был успешно удален.')
+            print()
+            for n in classes:
+                print(f'Список предметов теперь: {n}')
 
     elif command == 11:
         print('11. Выход из программы')
